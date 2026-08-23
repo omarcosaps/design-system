@@ -37,7 +37,6 @@ import {
   formatKpiValue,
   formatTransactionAmount,
   getDashboardPeriodData,
-  periodHeaderDescription,
   type DashboardAlertVariant,
   type DashboardKpi,
   type DashboardPeriodLabel,
@@ -147,14 +146,9 @@ export function ResumoView() {
   return (
     <FinovaPageShell activeItem="resumo" ariaLabel="Resumo financeiro">
       <header className="flex flex-col gap-4 pb-6 md:flex-row md:items-start md:justify-between md:pb-8">
-        <div className="space-y-1">
-          <h1 className="font-heading text-2xl font-bold tracking-tight text-foreground">
-            Resumo Financeiro
-          </h1>
-          <p className="text-sm text-muted-foreground">
-            {periodHeaderDescription(period)}
-          </p>
-        </div>
+        <h1 className="font-heading text-2xl font-bold tracking-tight text-foreground">
+          Resumo Financeiro
+        </h1>
 
         <div className="flex flex-wrap items-center gap-2 md:gap-3">
           <Select
