@@ -533,11 +533,6 @@ export function changeComparisonLabelFor(
   return "vs. mês anterior"
 }
 
-/** Subtítulo do header com o período selecionado explícito. */
-export function periodHeaderDescription(period: DashboardPeriodLabel): string {
-  return `Acompanhe o desempenho do seu negócio · ${period}`
-}
-
 export function cashFlowDescriptionFor(
   period: DashboardPeriodLabel,
   year: number,
